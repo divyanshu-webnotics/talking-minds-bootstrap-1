@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talking Minds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white fixed-top my-nav">
+        <div class="container d-block">
+            <div class="row">
+                <div class="col-12">
+                    <div class="test d-flex justify-content-between flex-column flex-lg-row">
+                        <div class="logo-hamburger-wrapper d-flex justify-content-between">
+                            <a class="navbar-brand" href="#">
+                                <img src="./assets/images/logo.svg">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item nav-item-home px-2 mx-2">
+                                    <a class="nav-link nav-home active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item px-2 mx-2">
+                                    <a class="nav-link active " href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown px-2 mx-2  dropdown-link">
+                                    <a class="nav-link active dropdown-toggle dropdown-toggler" href="#" role="button"
+                                         aria-expanded="false">
+                                        Programs
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                    <ul class="dropdown-menu-hover">
+                                        <li class="mb-2"><a  href="#">Action</a></li>
+                                        <li class="mb-2"><a  href="#">Another action</a></li>
+                                        
+                                        <li class="mb-2"><a  href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown px-2 mx-2 dropdown-link">
+                                    <a class="nav-link active dropdown-toggle dropdown-link dropdown-toggler-1" href="#" role="button"
+                                         aria-expanded="false">
+                                        Help
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                    <ul class="dropdown-menu-hover help-hover">
+                                        <li class="mb-2"><a  href="#">Action</a></li>
+                                        <li class="mb-2"><a  href="#">Another action</a></li>
+                                        
+                                        <li class="mb-2"><a  href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown mx-2 px-2 dropdown-link">
+                                    <a class="nav-link active dropdown-toggle dropdown-link dropdown-toggler-2" href="#" role="button"
+                                         aria-expanded="false">
+                                        Contact
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                    <ul class="dropdown-menu-hover">
+                                        <li class="mb-2"><a  href="#">Action</a></li>
+                                        <li class="mb-2"><a  href="#">Another action</a></li>
+                                        
+                                        <li class="mb-2"><a  href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <button type="button"
+                                class="btn btn-primary navbar-btn border-0 px-4 py-2 d-lg-none ms-3 ms-lg-0 ">
+                                Purchase Now
+                                <i class="fa-solid fa-arrow-down fa-rotate-by ms-2"
+                                    style="color: #ffffff; --fa-rotate-angle: -135deg;"></i>
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn-primary navbar-btn border-0 px-4 py-2 d-none d-lg-block">
+                            Purchase Now
+                            <i class="fa-solid fa-arrow-down fa-rotate-by ms-2"
+                                style="color: #ffffff; --fa-rotate-angle: -135deg;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="sec-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="text-center py-5 mx-auto hero-content">
+                        <p class="hero-h1 py-3">
+                            Psychotherapist Site Template
+                        </p>
+                        <p class="hero-h2 py-2">
+                            Private Mental Health Consultation from the Professionals
+                        </p>
+                        <p class="hero-h3 mx-auto">
+                            Talking Minds is a template for mental specialists, psychotherapists. or personal coaches,
+                            as well as for psychological clinics that practice group and individual therapy sessions.
+                            The Talking Minds is packed with powerful and intuitive features, providing endless
+                            possibilities. The template comes with an entire suite of beautifully designed layout
+                            components.
+                        </p>
+                        <button class="hero-btn px-5 py-2 mt-4">Home Page Demo
+                            <i class="fa-solid fa-arrow-down fa-rotate-by ms-1"
+                                style="color: #ffffff; --fa-rotate-angle: -135deg;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sec-3-content p-md-4 p-2 m-auto">
+                        <div class="sec-3-img-wrapper">
+                            <button class="sec-3-btn-1">
+                                <i class="fa-solid fa-house" style="color: #63E6BE;"></i>
+                                Awesome Home Page
+                            </button>
+                            <img class="sec-3-img" src="./assets/images/sec-3-img.jpg" alt="section-3_background">
+                            <button CLASS="sec-3-btn">
+                                LIVE PREVIEW
+                                <i class="fa-solid fa-arrow-down fa-rotate-by ms-1"
+                                    style="color: #ffffff; --fa-rotate-angle: -135deg;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sec-4-heading text-center">
+                        <p class="sec-4-h1">
+                            Available Features That Definitely You Need
+                        </p>
+                        <p class="sec-4-h2">
+                            these available features will make your website completely usable
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="sec-4-col  col-lg  col-md-12 col-sm-12 py-5 d-flex  flex-column flex-md-row flex-sm-row flex-lg-column justify-content-center align-items-center gap-md-4">
+                    <div
+                        class="sec-4-card card-99 d-flex align-items-center gap-2 text-center flex-column flex-xl-row text-xl-start">
+                        <i class="fa-solid fa-laptop-file"
+                            style="color: #26aba3; font-size: 27px; vertical-align: middle;"></i>
+                        <p class="sec-4-p mb-0 ">Perfect Responsive</p>
+                    </div>
+                </div>
+                <div
+                    class="sec-4-col   col-lg col-md-12 col-sm-12 py-5 d-flex flex-column flex-md-row flex-sm-row  flex-lg-column justify-content-center align-items-center gap-md-4">
+                    <div
+                        class="sec-4-card d-flex align-items-center gap-2 text-center flex-column flex-xl-row text-xl-start">
+                        <i class="fa-solid fa-person-running"
+                            style="color: #26aba3; font-size: 27px; vertical-align: middle;"></i>
+                        <p class="sec-4-p mb-0 ">Fast Perfomance</p>
+                    </div>
+                    <div
+                        class="sec-4-card d-flex align-items-center gap-2 text-center flex-column flex-xl-row text-xl-start">
+                        <i class="fa-solid fa-arrow-trend-up"
+                            style="color: #26aba3; font-size: 27px; vertical-align: middle;"></i>
+                        <p class="sec-4-p mb-0 ">SEO Optimized</p>
+                    </div>
+                </div>
+                <div
+                    class="sec-4-col  col-lg col-md-12 col-sm-12 py-5 d-flex flex-column flex-md-row flex-sm-row  flex-lg-column justify-content-center align-items-center gap-md-4">
+                    <div
+                        class="sec-4-card d-flex align-items-center gap-2 text-center flex-column flex-xl-row text-xl-start">
+                        <i class="fa-solid fa-arrows-spin"
+                            style="color: #26aba3; font-size: 27px; vertical-align: middle;"></i>
+                        <p class="sec-4-p mb-0 ">Lifetime Updates</p>
+                    </div>
+                    <div
+                        class="sec-4-card d-flex align-items-center gap-2 text-center flex-column flex-xl-row text-xl-start">
+                        <i class="fa-solid fa-puzzle-piece"
+                            style="color: #26aba3; font-size: 27px; vertical-align: middle;"></i>
+                        <p class="sec-4-p mb-0 ">Easy to Customize</p>
+                    </div>
+                    <div
+                        class="sec-4-card d-flex align-items-center gap-2 text-center flex-column flex-xl-row text-xl-start">
+                        <i class="fa-solid fa-file"
+                            style="color: #26aba3; font-size: 27px; vertical-align: middle;"></i>
+                        <p class="sec-4-p mb-0 ">Well Documented</p>
+                    </div>
+                </div>
+                <div
+                    class="sec-4-col   col-lg col-md-12 col-sm-12 py-5 d-flex flex-column flex-md-row flex-sm-row  flex-lg-column justify-content-center align-items-center gap-md-4">
+                    <div
+                        class="sec-4-card d-flex align-items-center gap-2 text-center flex-column  flex-xl-row text-xl-start">
+                        <i class="fa-solid fa-laptop-file"
+                            style="color: #26aba3; font-size: 27px; vertical-align: middle;"></i>
+                        <p class="sec-4-p mb-0 ">Organized Code</p>
+                    </div>
+                    <div
+                        class="sec-4-card d-flex align-items-center gap-2 text-center flex-column  flex-xl-row text-xl-start">
+                        <i class="fa-solid fa-headphones-simple"
+                            style="color: #26aba3; font-size: 27px; vertical-align: middle;"></i>
+                        <p class="sec-4-p mb-0 ">Friendly support</p>
+                    </div>
+                </div>
+                <div
+                    class="sec-4-col  col-lg  col-md-12 col-sm-12 py-5 d-flex flex-column flex-md-row flex-sm-row  flex-lg-column justify-content-center align-items-center gap-md-4">
+                    <div
+                        class="sec-4-card d-flex align-items-center gap-2 text-center flex-column  flex-xl-row text-xl-start">
+                        <i class="fa-solid fa-down-long"
+                            style="color: #26aba3; font-size: 27px; vertical-align: middle;"></i>
+                        <p class="sec-4-p mb-0 ">Scroll Down for More Features</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sec-4-heading text-center">
+                        <p class="sec-4-h1">
+                            Inner Page Templates
+                        </p>
+                        <p class="sec-4-h2">
+                            You definitely need the inner page templates
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class=" col-12 col-md-6 col-lg-4">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-1.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down card-icon" style="color: #26aba3;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .fa-arrow-up-right::before {
+                        content: "\e09f !important";
+                    }
+                </style>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-2.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-3.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-4.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-5.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-6.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-7.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-8.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-9.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-10.jpg" style="width:100%; border-radius:60px;">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="main-card mt-5">
+                        <div class="card-img-container">
+                            <img src="./assets/images/card-11.jpg" style="width:100%; border-radius:60px; ">
+                        </div>
+                        <div class="card-link-container pt-4 pb-3 text-center">
+                            <a class="sec-5-anchor" href="#">
+                                <p class="sec-5-para">Expert
+                                    Team</p>
+                                <i class="fa-solid fa-arrow-down fa-rotate-by card-icon" style="color: #26aba3; "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 order-2 order-lg-1">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="sec-6-heading">
+                                <span>Dr. Merry Stone</span> — Licensed Mental Health Counselor, Psychotherapist
+                            </h1>
+                            <p class="sec-6-para">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page. Sed ut perspiciatis unde omnis iste natus error.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <ul class="sec-6-list-1">
+                                <li>
+                                    <span class="sec-6-icon">
+                                        <i class="fa-regular fa-circle-check" style="color: #F7AB1E;"></i>
+                                    </span>
+                                    <span class="sec-6-list-text">Personal Consultations</span>
+                                </li>
+                                <li>
+                                    <span class="sec-6-icon">
+                                        <i class="fa-regular fa-circle-check" style="color: #F7AB1E;"></i>
+                                    </span>
+                                    <span class="sec-6-list-text">Group Therapy</span>
+
+                                </li>
+                                <li>
+                                    <span class="sec-6-icon">
+                                        <i class="fa-regular fa-circle-check" style="color: #F7AB1E;"></i>
+                                    </span>
+                                    <span class="sec-6-list-text">Online Therapy</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <ul class="sec-6-list-2">
+                                <li>
+                                    <span class="sec-6-icon">
+                                        <i class="fa-regular fa-circle-check" style="color: #F7AB1E;"></i>
+                                    </span>
+                                    <span class="sec-6-list-text">Unique technique</span>
+                                </li>
+                                <li>
+                                    <span class="sec-6-icon">
+                                        <i class="fa-regular fa-circle-check" style="color: #F7AB1E;"></i>
+                                    </span>
+                                    <span class="sec-6-list-text">Couple Problem</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button>
+                                Learn More
+                                <i class="fa-solid fa-arrow-down fa-rotate-by ms-2"
+                                    style="color: #ffffff; --fa-rotate-angle: -135deg;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 order-1 order-lg-2">
+                    <div class="sec-6-img-wrapper">
+                        <img class="sec-6-img" src="./assets/images/sec-6-img.jpg">
+                        <a href="https://www.youtube.com/watch?v=Nh-CtVgQNnA" target="_blank" class="play-btn-wrapper">
+                            <i class="fa-solid fa-play play-btn"></i>
+                        </a>
+                    </div>
+                    <!-- <div class="sec-6-bgc-img">
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sec-7-main">
+                        <div class="top-leaf-wrapper">
+                            <img src="./assets/images/top-leaf.svg">
+                        </div>
+                        <div class="bottom-leaf-wrapper">
+                            <img src="./assets/images/bottom-leaf.svg">
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="sec-4-heading text-center">
+                                    <p class="sec-4-h1">
+                                        Get your first free
+                                        online consultation
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-wrapper">
+                                    <form>
+                                        <div
+                                            class="form-top d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-items-center">
+                                            <div class="input-div">
+                                                <label for="name">Name</label> <br>
+                                                <input type="text" id="name" name="name" placeholder="Your name">
+                                            </div>
+                                            <div class="input-div">
+                                                <label for="phone">Phone</label> <br>
+                                                <input type="text" id="phone" name="phone"
+                                                    placeholder="Mobile phone number">
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-top d-flex flex-column flex-md-row align-items-center justify-content-md-around justify-content-center mt-md-4">
+                                            <div class="input-div">
+                                                <label for="therapy">Section</label> <br>
+                                                <select class="custom-select-arrow" id="fruit" name="fruit">
+                                                    <option value="apple">Select therapy</option>
+                                                    <option value="banana">Therapy one</option>
+                                                    <option value="cherry">Therapy two</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-div">
+                                                <label for="dob">Select a date:</label> <br>
+                                                <input type="date" id="dob" name="dob">
+                                            </div>
+                                        </div>
+                                        <div class="form-top d-flex justify-content-center mt-4 mt-md-5">
+                                            <div class="form-btn">
+                                                <button type="submit">Get Consultation <i
+                                                        class="fa-solid fa-arrow-down fa-rotate-by ms-2"
+                                                        style="color: #ffffff; --fa-rotate-angle: -135deg;"></i></button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section-8">
+        <div class="container">
+            <div class="row gx-5" >
+                <div class="col-12 col-lg-6">
+                    <div class="sec-8-wrapper-1">
+                        <div class="sec-8-img-bgc-1"></div>
+                        <div class="sec-8-img-bgc-2"></div>
+                        <div class="img-wrapper d-flex">
+                            <div class="d-flex flex-column gap-4 pt-5">
+                                <img src="./assets/images/col-1-img-1.png" style="width: 85%; margin:auto;">
+                                <img src="./assets/images/col-1-img-2.png">
+                            </div>
+                            <div class="d-flex flex-column gap-4">
+                                <img src="./assets/images/col-2-img-1.png">
+                                <img src="./assets/images/col-2-img-2.png" style="width: 80%; ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 pt-5">
+                    <div class="sec-8-heading">
+                        <p class="sec-4-h1">
+                            The most popular questions to discuss mental health
+                        </p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button acc-btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is mental health?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What do I do if the support doesn't help?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Can you prevent mental health problems?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        What are the 7 components of mental health?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed acc-btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Are there cures for mental health problems?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-9">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-12 col-lg-6 " >
+                    <div class="sec-9-heading mb-5">
+                        <p class="sec-4-h1">
+                            Contact Info
+                        </p>
+                        <p class="sec-4-h2">
+                            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                        </p>
+                    </div>
+                    <div class="row mb-5 ">
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <div class="sec-9-link d-flex align-items-center gap-3 mb-4">
+                                <span class="sec-9-icon-span d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <div class="sec-9-link-cnt d-flex flex-column">
+                                    <p class="para-1 m-0">Phone Number</p>
+                                    <p class="para-2 m-0">+1 234 56 78 123</p>
+                                </div>
+                            </div>
+                            <div class="sec-9-link d-flex align-items-center gap-3">
+                                <span class="sec-9-icon-span d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-fax"></i>
+                                </span>
+                                <div class="sec-9-link-cnt d-flex flex-column">
+                                    <p class="para-1 m-0">Fax</p>
+                                    <p class="para-2 m-0">+1 234 56 78 123</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="sec-9-link d-flex align-items-center gap-3 mb-4">
+                                <span class="sec-9-icon-span d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <div class="sec-9-link-cnt d-flex flex-column">
+                                    <p class="para-1 m-0">Email</p>
+                                    <p class="para-2 m-0">info@talkingminds.com</p>
+                                </div>
+                            </div>
+                            <div class="sec-9-link d-flex align-items-center gap-3">
+                                <span class="sec-9-icon-span d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <div class="sec-9-link-cnt d-flex flex-column">
+                                    <p class="para-1 m-0">Location</p>
+                                    <p class="para-2 m-0">49, Caradon Hill, ULBSTER</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-time-cnt mb-5">
+                        <h2 class="mb-3">Working Time</h2>
+                        <div class="weekdays d-flex justify-content-between">
+                            <p class="m-0">Monday-Friday</p>
+                            <span>8 am - 5 pm</span>
+                        </div>
+                        <hr>
+                        <div class="weekends d-flex justify-content-between">
+                            <p class="m-0">Saturday-Sunday</p>
+                            <span>9 am - 2 pm</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6" >
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.3497964907124!2d77.95151487377075!3d27.208165447334284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397389954094ee1f%3A0x98d610bcb4204160!2sWebnotics%20Pvt.%20LTD%20Agra%20%7C%20Website%20Design%20%26%20Development%20%7C%20SEO%20Services%20%7C%20eCommerce%20Solutions!5e0!3m2!1sen!2sin!4v1751294023198!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-row-1">
+                <div class="row gy-5">
+                <div class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-start align-items-center">
+                    <div class="footer-1 d-flex justify-content-between align-items-center">
+                        <a class="navbar-brand footer-logo" href="#">
+                                <img src="./assets/images/footer-logo.svg">
+                        </a> 
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+                    <ul class="footer-links d-flex gap-5 align-items-md-center flex-column flex-md-row m-0 align-items-start">
+                            <li>
+                                Home
+                            </li>
+                            <li>
+                                About
+                            </li>
+                            <li>
+                                Program
+                            </li>
+                            <li>
+                                Blog
+                            </li>
+                            <li>
+                                Gallery
+                            </li>
+                            <li>
+                                Contacts
+                            </li>
+                            
+                        </ul>
+                </div>
+                <div class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-end">
+                    <div class="footer-link-cnt d-flex align-items-center gap-4 gap-lg-2">
+                            <span class="footer-icon-span d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </span>
+                            <span class="footer-icon-span d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+                            <span class="footer-icon-span d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </span>
+                            <span class="footer-icon-span d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </span>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="footer-row-2">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="foot-r2-para p-4">
+                            Merkulove © <span style="font-weight: 800;">TalkingMinds</span> Template All rights reserved Copyrights 2023
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const nav_link_cnt = document.querySelector('.dropdown-toggler');
+        const nav_link_cnt_1 = document.querySelector('.dropdown-toggler-1');
+        const nav_link_cnt_2 = document.querySelector('.dropdown-toggler-2');
+const addAttr = () => {
+    if (window.matchMedia("(max-width: 1024px)").matches) {
+        nav_link_cnt.setAttribute("data-bs-toggle", "dropdown");
+        nav_link_cnt_1.setAttribute("data-bs-toggle", "dropdown");
+        nav_link_cnt_2.setAttribute("data-bs-toggle", "dropdown");
+    }
+
+    else {
+        nav_link_cnt.removeAttribute("data-bs-toggle", "dropdown");
+        nav_link_cnt_1.removeAttribute("data-bs-toggle", "dropdown");
+        nav_link_cnt_2.removeAttribute("data-bs-toggle", "dropdown");
+    }
+    console.log("hello");
+}
+
+addAttr();
+
+window.addEventListener('resize', addAttr);
+    </script>
+</body>
+
+</html>
